@@ -10,13 +10,11 @@ namespace DanielDevToolsSelfHosted
 
         public SysTrayApp()
         {
-            // Create a simple tray menu with only one item.
             var trayMenu = new ContextMenu();
             trayMenu.MenuItems.Add("AppLogg", OnNavigateToAppLog);
+            trayMenu.MenuItems.Add("-");
             trayMenu.MenuItems.Add("Exit", OnExit);
-            // Create a tray icon. In this example we use a
-            // standard system icon for simplicity, but you
-            // can of course use your own custom icon too.
+
             _trayIcon = new NotifyIcon
             {
                 Text = "Daniel Dev Tools",
