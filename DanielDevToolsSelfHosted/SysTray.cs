@@ -18,7 +18,7 @@ namespace DanielDevToolsSelfHosted
             _trayIcon = new NotifyIcon
             {
                 Text = "Daniel Dev Tools",
-                Icon = new Icon(SystemIcons.Application, 40, 40),
+                Icon = new Icon("favicon.ico", 40, 40),
                 ContextMenu = trayMenu,
                 Visible = true
             };
