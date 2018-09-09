@@ -34,7 +34,7 @@ namespace DanielDevToolsSelfHosted
         private void StartServer()
         {
             var cassiniDevServer = new CassiniDev.CassiniDevServer();
-            cassiniDevServer.StartServer("C:\\X\\KK\\AppLogg\\AppLogg.Web\\bin\\Release\\PublishOutput");
+            cassiniDevServer.StartServer("App");
             GoToAppLog();
         }
 
